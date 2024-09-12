@@ -18,17 +18,17 @@ If you find a better more consistent source please update these in an issue.
         friendly_name: "Outdoor VOC"
         value_template: >-
           {% set aqi = states('sensor.o_1pst_voc_index') | float %}
-          {% if aqi <= 50 %} 
+          {% if aqi <= 100 %} 
           Good
-          {% elif 51 >= aqi <= 100 %}
-          Moderate
           {% elif 101 >= aqi <= 150 %}
-          Unhealthy for Sensitive Groups
+          Moderate
           {% elif 151 >= aqi <= 200 %}
-          Unhealthy
+          Unhealthy for Sensitive Groups
           {% elif 201 >= aqi <= 300 %}
+          Unhealthy
+          {% elif 301 >= aqi <= 400 %}
           Very Unhealthy
-          {% elif aqi > 300 %} 
+          {% elif aqi > 401 %} 
           Hazardous
           {% endif %}
 
