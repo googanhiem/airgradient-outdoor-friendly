@@ -1,7 +1,7 @@
 # airgradient-outdoor-friendly
 Friendly explanations of the numbers given by AirGradient outdoor sensors for Home Assistant.
 
-<img width="416" alt="image" src="https://github.com/user-attachments/assets/8beab2be-9f34-440f-96ce-cca41061adb3">
+<img width="397" alt="image" src="https://github.com/user-attachments/assets/f425310e-c44c-4d5e-ba92-ee379d555334">
 
 Add these to your configuration.yaml or build a template sensor helper and add the value template for each.
 
@@ -15,7 +15,7 @@ If you find a better more consistent source please update these in an issue.
   - platform: template
     sensors:
       o_1pst_voc_index_friendly:
-        friendly_name: "Outdoor VOC friendly"
+        friendly_name: "Outdoor VOC"
         value_template: >-
           {% set aqi = states('sensor.o_1pst_voc_index') | float %}
           {% if aqi <= 50 %} 
@@ -33,7 +33,7 @@ If you find a better more consistent source please update these in an issue.
           {% endif %}
 
       o_1pst_pm0_3_friendly:
-        friendly_name: "Outdoor PM0.3 friendly"
+        friendly_name: "Outdoor PM0.3"
         value_template: >-
           {% set aqi = states('sensor.o_1pst_pm0_3') | float %}
           {% if aqi <= 1000 %} 
@@ -51,7 +51,7 @@ If you find a better more consistent source please update these in an issue.
           {% endif %}
 
       o_1pst_pm1_friendly:
-        friendly_name: "Outdoor PM1 friendly"
+        friendly_name: "Outdoor PM1"
         value_template: >-
           {% set aqi = states('sensor.o_1pst_pm1') | float %}
           {% if aqi <= 9 %} 
@@ -69,7 +69,7 @@ If you find a better more consistent source please update these in an issue.
           {% endif %}
 
       o_1pst_pm2_5_friendly:
-        friendly_name: "Outdoor PM2.5 friendly"
+        friendly_name: "Outdoor PM2.5"
         value_template: >-
           {% set aqi = states('sensor.o_1pst_pm2_5') | float %}
           {% if aqi <= 9 %} 
@@ -87,7 +87,7 @@ If you find a better more consistent source please update these in an issue.
           {% endif %}
 
       o_1pst_pm10_friendly:
-        friendly_name: "Outdoor PM10 friendly"
+        friendly_name: "Outdoor PM10"
         value_template: >-
           {% set aqi = states('sensor.o_1pst_pm10') | float %}
           {% if aqi <= 54 %} 
@@ -105,7 +105,7 @@ If you find a better more consistent source please update these in an issue.
           {% endif %}
 
       o_1pst_nox_index_friendly:
-        friendly_name: "Outdoor NOX friendly"
+        friendly_name: "Outdoor NOX"
         value_template: >-
           {% set aqi = states('sensor.o_1pst_nox_index') | float %}
           {% if aqi <= 50 %} 
@@ -123,7 +123,7 @@ If you find a better more consistent source please update these in an issue.
           {% endif %}
 
       o_1pst_carbon_dioxide_friendly:
-        friendly_name: "Outdoor CO2 friendly"
+        friendly_name: "Outdoor CO2"
         value_template: >-
           {% set aqi = states('sensor.o_1pst_carbon_dioxide') | float %}
           {% if aqi <= 800 %} 
