@@ -1,6 +1,8 @@
 # airgradient-outdoor-friendly
 Friendly explanations of the numbers given by AirGradient outdoor sensors for Home Assistant.
 
+<img width="416" alt="image" src="https://github.com/user-attachments/assets/8beab2be-9f34-440f-96ce-cca41061adb3">
+
 Add these to your configuration.yaml or build a template sensor helper and add the value template for each.
 
 No single source was used for these values because there does not seem to be one. This is a mix of European and US limits skewing to use the lower limits if possible, and is therefore only a rough estimate of exposure levels and should not be relied upon if you have respiratory problems. PM0.3 was sourced from [Purple Air](https://community.purpleair.com/t/raw-sensor-data-layers/156), and the rest were sourced from Research Gate articles.
